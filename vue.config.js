@@ -18,7 +18,7 @@ module.exports = {
     https: false,
     disableHostCheck: true,
     overlay: {
-      warnings: true,
+      warnings: false,
       errors: true
     }
   }
