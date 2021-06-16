@@ -1,8 +1,11 @@
-// vue.config.js
+
 module.exports = {
   publicPath: process.env.VUE_APP_BASE_URL || '/',
   productionSourceMap: false,
-  configureWebpack: {},
+  configureWebpack: {
+    plugins: [
+    ]
+  },
   css: {
     loaderOptions: {
       scss: {

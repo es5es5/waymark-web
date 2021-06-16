@@ -14,10 +14,10 @@ export default defineComponent({
   },
   data () {
     return {
-      // mapOptions: {
-      //   center: new naver.maps.LatLng(37.3595704, 127.105399),
-      //   zoom: 10
-      // }
+      mapOptions: {
+        // center: new naver.maps.LatLng(37.3595704, 127.105399),
+        // zoom: 10
+      }
     }
   },
   components: {

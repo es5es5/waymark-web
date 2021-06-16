@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -31,7 +33,9 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "local.d.ts",
+    "vue-shim.d.ts",
   ],
   "exclude": [
     "node_modules"
