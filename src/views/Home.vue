@@ -7,10 +7,19 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { loadScript } from 'vue-plugin-load-script'
+
 export default defineComponent({
   name: 'Home',
   created () {
     this.initProtocalPlugins()
+  },
+  async mounted () {
+    loadScript(`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.VUE_APP_NAVER_MAPS_CLIENT_ID}`).then(() => {
+      console.log('Hi')
+    }).catch(() => {
+      console.log('Bye')
+    })
   },
   data () {
     return {
